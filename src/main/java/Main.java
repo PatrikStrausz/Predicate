@@ -29,19 +29,7 @@ public class Main {
 
 
         cityList.stream().filter(fi.and(oh)).forEach(System.out::println);
-       List<City> resultList =  cityList.stream().filter(fi.and(oh)).collect(Collectors.toList());
 
-
-        System.out.println("RESULT\n______________________________________");
-        for (int i = 0; i < resultList.size(); i++) {
-
-            System.out.println("CITY "+i+":"+
-                    resultList.get(i).getName()
-            +"  " + resultList.get(i).getPop() +
-                    "  "+resultList.get(i).getDistrict()
-            +"  "+resultList.get(i).getCode()+"\n");
-
-        }
 
 
     }
